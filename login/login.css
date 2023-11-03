@@ -1,0 +1,98 @@
+@import url(/style.css);
+
+.container {
+    display: flex;
+    /* Com height 100, vc consegue preencher 100% do espaço da tela. */
+    height: 100vh;
+}
+
+.container-title {
+    background-color: var(--primary-color);
+    flex-basis: 40%;
+}
+
+.container-login {
+    flex-basis: 60%;
+}
+
+.header>h2 {
+    font-size: var(--font-size-title);
+    font-weight: var(--font-regular);
+    text-align: center;
+    padding-top: 35%;
+}
+
+.header>h3 {
+    font-size: var(--font-size-subtitle);
+    font-weight: var(--font-regular);
+    text-align: center;
+    padding-top: 52px;
+}
+
+.copyright-container {
+    margin-top: 250px;
+    text-align: center;
+}
+
+.copyright-container>a {
+    color: black;
+}
+
+/* =====================   LOGIN    =====================  */
+.container-login>main>img {
+    height: 200px;
+}
+
+.container-login {
+    display: flex;
+    padding-top: 120px;
+    justify-content: center;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    padding-top: 55px;
+    align-items: center;
+}
+
+.container-input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-input>input {
+    background-color: var(--gray-color);
+    border: none;
+    width: 400px;
+    height: 50px;
+    border-radius: var(--border-radius);
+}
+
+.container-input>input:focus {
+    border: 2px solid var(--input-focus);
+    outline: none;
+}
+
+.container-input>a {
+    color: var(--text-color);
+}
+
+.form-login>button {
+    font-size: var(--font-size-subtitle);
+    margin-top: 50px;
+    background-color: var(--button-color);
+    height: 50px;
+    width: 230px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    border: none;
+    color: #ffff;
+}
+
+.form-login>button:hover {
+    transform: scale(1.05);
+    transition: .3s;
+    background-color: var(--button-hover);
+}
